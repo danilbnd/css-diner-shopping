@@ -1,0 +1,83 @@
+body {
+  font: 400 26px/1.3 "Tebuchet MC", Tebuchet, Arial, sans-serif;
+  background: #3b3f45;
+  border: 25px solid #fff;
+  color: #f9f9f9;
+}
+
+.ba-header,
+.ba-footer {
+  text-align: center;
+  background: #4a4f56;
+  color: #e97f81;
+  padding: 15px 0;
+  line-height: 20px;
+}
+h1 {
+  font-size: 36px;
+}
+h4 {
+  font-weight: normal;
+  margin: 15px;
+}
+
+.ba-conteiner {
+  max-width: 800px;
+  margin:  auto;
+  padding: 20px 10px;
+}
+
+.ba-shopping-list {
+	margin-bottom: 20px;
+  list-style: none;
+  color: #fff;
+  
+}
+.ba-shopping-list li {
+  background: #7a7692;
+  border: 0 solid #fff;
+}
+.ba-shopping-list label {
+  display: block;
+  cursor: pointer;
+  padding: 15px 0 15px 27px;
+  
+}
+.ba-shopping-list li:nth-child(odd) {
+  background: #88849d;
+}
+.ba-shopping-list [type="checkbox"] {
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  transform: scale(2, 2);
+  cursor: pointer;
+}
+.ba-shopping-list [type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #a3a0b5;
+}
+
+.ba-shopping-list li:hover {
+  background: #615f77;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+.ba-shopping-list li:active {
+  background: #e97f81;
+}
+.ba-description {
+  color: #a3a0b5;
+}
+.ba-shopping-list .ba-description:before {
+  content: "(";
+}
+
+.ba-shopping-list .ba-description:after {
+  content: ")";
+}
+
+* {
+  transition: all 0.1s ease-in;
+}
